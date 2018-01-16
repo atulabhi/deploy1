@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: stage-openebs
-          image: avneetsingh/openebs-website:60f942
+          image: avneetsingh/openebs-website:b706ec
           imagePullPolicy: IfNotPresent
           ports:
           - containerPort: 80
