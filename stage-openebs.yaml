@@ -1,8 +1,8 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  annotations:
-    flux.weave.works/automated: "true"
+  #annotations:
+   # flux.weave.works/automated: "true"
   name: stage-openebs
 spec:
   replicas: 1
