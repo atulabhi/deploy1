@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: maya-config
+data:
+  maya.properties: |
+    server.default.access.grant=true
+    maya.api.ui.enabled=true
+    api.auth.enabler=github_user:18216179
+    api.auth.github.client.id=34623e04a66e65762fd4
+    api.auth.github.client.secret=7474a49b2b6485da0ebf6943b1f4ae0af14dfb57
+    no.reply.email.address=rakesh.singh@cloudbyte.com
+    no.reply.email.password=LSs-Xea-3XA-W2J
+    slack.config.bot.client.id=306140326769.310640528417
+    slack.config.bot.client.secret=45e225230ffdda556b00e0aac04a8820
+    slack.config.bot.redirect.url=https://uidev.mayacloud.io/organization/integrations
+    slack.config.bot.oauth.url=https://slack.com/oauth/authorize?client_id=306140326769.310640528417&scope=bot\,incoming-webhook\,commands
+    mayaUrl=https://uidev.mayacloud.io
+    maya.ingress.gke=/mayastore/maya-ingress-gke.yaml
+    maya.ingress.auth=/mayastore/auth
+    maya.cortex.push.url=https://uidev-app.mayacloud.io/maya-cortex-push/api/prom/push
+    maya.cortex.pull.url=https://uidev-app.mayacloud.io/maya-cortex-pull/api/prom
+    maya.cortex.am.url=https://uidev-app.mayacloud.io/maya-cortex-am/
+    maya.grafana.url=https://uidev-app.mayacloud.io/maya-grafana/
+    maya.grafana.admin.password=##maya%%
+    mulebot.alert.url=https://uidev-app.mayacloud.io/chat-server/maya-events
+    maya.cortex.query.url=https://uidev-app.mayacloud.io/alertquery/api/prom/alerts/read
+    maya.cortex.dist.url=https://uidev-app.mayacloud.io/alertdist/api/prom/alerts/push
